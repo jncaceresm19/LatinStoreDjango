@@ -1,0 +1,265 @@
+{% extends 'pagina/base.html' %}
+{% load static %}
+
+{% block js %}
+<script src="{% static 'pagina/js/mijs.js' %}"></script>
+{% endblock %}
+
+{% block contenido %} 
+<!--Imagen BANNER-->
+<center><img class="imglogo img-fluid" src="{% static 'pagina/img/bannerestadiooorestoooo.avif' %}" alt="centered image" height="50%" width="100%"><br><br>
+</center>
+  <!--sección Resto el mundo-->
+  <div class="container">
+    <h3 class="text-center">Camisetas Resto del Mundo</h3><br>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/Europa/Alemania/BAYERLOCAL.jpg' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">BAYERN MUNCHEN</h4>
+                <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'alemania' %}?imageUrl=/static/pagina/img/Europa/Alemania/BAYERLOCAL.jpg" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/Europa/Alemania/LEVERKUSENLOCAL.jpg' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">BAYERN LEVERKUSEN</h4>
+                <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'alemania' %}?imageUrl=/static/pagina/img/Europa/Alemania/LEVERKUSENLOCAL.jpg" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/Europa/España/Polera_RealMadrid.webp' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">REAL MADRID</h4>
+                <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'madrid' %}?imageUrl=/static/pagina/img/Europa/España/Polera_RealMadrid.webp" class="btn btn-primary">Ver más</a>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/Europa/España/RMCFMZ0130-01_aa1d0e8c-4c9a-443f-a226-d57e18ccd661.webp' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">REAL MADRID</h4>
+                <h5 class="card-title fw-bold">Visita 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'madrid' %}?imageUrl=/static/pagina/img/Europa/España/RMCFMZ0130-01_aa1d0e8c-4c9a-443f-a226-d57e18ccd661.webp"  class="btn btn-primary ">Ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/Europa/Inglaterra/CITYLOCAL.png' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">MANCHESTER CITY</h4>
+                <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'manchester' %}?imageUrl=/static/pagina/img/Europa/Inglaterra/CITYLOCAL.png"  class="btn btn-primary ">Ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/Europa/Inglaterra/unitedlocal.webp' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">MAN. UNITED</h4>
+                <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'manchester' %}?imageUrl=/static/pagina/img/Europa/Inglaterra/unitedlocal.webp"  class="btn btn-primary ">Ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/Europa/Francia/polera_psg.jpg' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">PSG</h4>
+                <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'psg' %}?imageUrl=/static/pagina/img/Europa/Francia/polera_psg.jpg"  class="btn btn-primary ">Ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/brasil/brasillocal.webp' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">SELECCIÓN BRASIL</h4>
+                <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'brasil' %}?imageUrl=/static/pagina/img/brasil/brasillocal.webp"  class="btn btn-primary ">Ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/Europa/Francia/polera_visita_psg.jpg' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">PSG</h4>
+                <h5 class="card-title fw-bold">Visita 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'psg' %}?imageUrl=/static/pagina/img/Europa/Francia/polera_visita_psg.jpg"  class="btn btn-primary ">Ver mas</a>
+              </div>
+            </div>
+          </div>
+        </div><br><br>
+  </div>
+  <!--sección interes camisetas-->
+  <div class="container">
+        <h3 class="text-center">También te recomendamos</h3><br>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="{% static 'pagina/img/chile/Camiseta_Local_Colo-Colo_2024_Blanco_IQ2515_01_laydown.avif' %}" class="card-img img-fluid" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bold">COLO-COLO</h4>
+                    <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                    <div class="rating">
+                      <i class="bi bi-star star"></i>
+                      <i class="bi bi-star star"></i>
+                      <i class="bi bi-star star"></i>
+                      <i class="bi bi-star star"></i>
+                      <i class="bi bi-star star"></i>
+                    </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="d-flex justify-content-around mb-4">
+                    <a href="{% url 'cololocal' %}" class="btn btn-primary ">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="{% static 'pagina/img/chile/LOCALU.webp' %}" class="card-img img-fluid" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bold">UNIVERSIDAD DE CHILE</h4>
+                    <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                    <div class="rating">
+                      <i class="bi bi-star star"></i>
+                      <i class="bi bi-star star"></i>
+                      <i class="bi bi-star star"></i>
+                      <i class="bi bi-star star"></i>
+                      <i class="bi bi-star star"></i>
+                    </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="d-flex justify-content-around mb-4">
+                    <a href="{% url 'udechilelocal' %}" class="btn btn-primary ">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="{% static 'pagina/img/ARGENTINA/ARGENTINALOCAL.jpeg' %}" class="card-img img-fluid" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bold">SELECCIÓN ARGENTINA</h4>
+                    <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                    <div class="rating">
+                      <i class="bi bi-star star"></i>
+                      <i class="bi bi-star star"></i>
+                      <i class="bi bi-star star"></i>
+                      <i class="bi bi-star star"></i>
+                      <i class="bi bi-star star"></i>
+                    </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="d-flex justify-content-around mb-4">
+                    <a href="{% url 'argentina' %}" class="btn btn-primary ">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+  </div><br><br>
+{% endblock %}

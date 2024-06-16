@@ -1,0 +1,147 @@
+{% extends 'pagina/base.html' %}
+{% load static %}
+{% block contenido %} 
+<!--Imagen BANNER-->
+<center><img class="imglogo img-fluid" src="{% static 'pagina/img/chile/BANNERUUU.jpg' %}" alt="centered image" height="50%" width="100%"><br><br>
+</center>
+
+<h3 class="text-center">NUEVA CAMISETA UNIVERSIDAD DE CHILE</h3>
+<h5 class="text-center">Compra la camiseta oficial adidas de UNIVERSIDAD DE CHILE</h5>
+<!--sección LOCAL/VISITA/alternativa-->
+<br><div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"><br><br><br>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/chile/ULOCAL.avif' %}" class="img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">UNIVERSIDAD DE CHILE</h4>
+                <h5 class="card-title fw-bold">2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'udechilelocal' %}?imageUrl=/static/pagina/img/chile/ULOCAL.avif" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/chile/Camiseta_Visita_Universidad_de_Chile_2024_Morado_IU8242_01_laydown.avif' %}" class="img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">UNIVERSIDAD DE CHILE</h4>
+                <h5 class="card-title fw-bold">Visita 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'udechilelocal' %}?imageUrl=/static/pagina/img/chile/Camiseta_Visita_Universidad_de_Chile_2024_Morado_IU8242_01_laydown.avif" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/chile/camiseta-u-alternativa.avif' %}" class="img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">UNIVERSIDAD DE CHILE</h4>
+                <h5 class="card-title fw-bold">Alternativa 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'udechilelocal' %}?imageUrl=/static/pagina/img/chile/camiseta-u-alternativa.avif" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div><br><br>
+</div>
+<!--FOTOS-->
+<center><img class="imglogo img-fluid" src="{% static 'pagina/img/chile/umujeres.png' %}" alt="centered image" height="50%" width="70%"><br><br>
+</center>
+
+<!--sección interes camisetas-->
+  <div class="container">
+    <h3 class="text-center">También te recomendamos</h3><br>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/chile/Camiseta_Local_Chile_2024_Rojo_IP8453_01_laydown.avif' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">SELECCIÓN CHILENA</h4>
+                <h5 class="card-title fw-bold">Visita 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'udechilelocal' %}?imageUrl=/static/pagina/img/chile/Camiseta_Local_Chile_2024_Rojo_IP8453_01_laydown.avif" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/Europa/Alemania/LEVERKUSENLOCAL.jpg' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">BAYERN LEVERKUSEN</h4>
+                <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'alemania' %}?imageUrl=/static/pagina/img/Europa/Alemania/LEVERKUSENLOCAL.jpg" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/Europa/Francia/polera_visita_psg.jpg' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">PSG</h4>
+                <h5 class="card-title fw-bold">Visita 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'psg' %}?imageUrl=/static/pagina/img/Europa/Francia/polera_visita_psg.jpg"  class="btn btn-primary ">Ver mas</a>
+              </div>
+            </div>
+          </div>
+        </div><br><br>
+  </div><br><br>
+
+{% endblock %}

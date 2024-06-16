@@ -1,0 +1,30 @@
+{% extends 'pagina/base.html' %}
+{% load static %}
+{% block contenido %} 
+    <br><div class="container">
+        <div class="row">
+            <div class="col">
+                <center><h1>Agregar Nuevo Producto</h1></center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_table }}
+                    <div class="mb-3">
+                        <br><input type="submit" class="btn btn-primary" value="Enviar">
+                        <input type="reset" class="btn btn-primary" value="Limpiar">
+                    </div>
+                    {% if mensaje %}
+                        <div class="alert alert-success" role="alert">
+                            {{ mensaje }}
+                        </div>
+                    {% endif %}
+                </form>
+                <a href="{% url 'productoList' %}" class="btn btn-primary mt-3">Volver</a>
+            </div>
+        </div>
+    </div>
+</html><br><br>
+{% endblock %}

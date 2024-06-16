@@ -1,0 +1,151 @@
+
+{% extends 'pagina/base.html' %}
+{% load static %}
+{% block contenido %} 
+<!--Imagen BANNER-->
+<center><img class="imglogo img-fluid" src="{% static 'pagina/img/chile/BANNER-COLO-3.png' %}" alt="centered image" height="50%" width="100%"><br><br>
+</center>
+
+<h3 class="text-center">NUEVA CAMISETA COLO-COLO</h3>
+<h5 class="text-center">Compra la camiseta oficial adidas de COLO-COLO</h5>
+<!--sección LOCAL/VISITA/ESPECIAL-->
+<br><div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"><br><br><br>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/chile/Camiseta_Local_Colo-Colo_2024_Blanco_IQ2515_01_laydown.avif' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">COLO-COLO</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'cololocal' %}?imageUrl=/static/pagina/img/chile/Camiseta_Local_Colo-Colo_2024_Blanco_IQ2515_01_laydown.avif" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/chile/Camiseta_Visita_Colo-Colo_2024_Negro_IZ0720_01_laydown.avif' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">COLO-COLO</h4>
+                <h5 class="card-title fw-bold">Visita 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'cololocal' %}?imageUrl=/static/pagina/img/chile/Camiseta_Visita_Colo-Colo_2024_Negro_IZ0720_01_laydown.avif" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/chile/COLO_3RD_JSY_Dorado_GC6046_01_laydown.avif' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">COLO-COLO</h4>
+                <h5 class="card-title fw-bold">Gold 2022-2023</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'cololocal' %}?imageUrl=/static/pagina/img/chile/COLO_3RD_JSY_Dorado_GC6046_01_laydown.avif" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div><br><br>
+</div>
+<!--FOTOS-->
+<center>
+  <div>
+    <img class="imglogo img-fluid" src="{% static 'pagina/img/chile/cortes1.jpg' %}" alt="centered image" height="40%" width="30%">
+    <img class="imglogo img-fluid" src="{% static 'pagina/img/chile/cortes2.jpg' %}" alt="centered image" height="40%" width="30%">  
+    <img class="imglogo img-fluid" src="{% static 'pagina/img/chile/cortes3.jpg' %}" alt="centered image" height="40%" width="30%"> 
+  </div>
+</center>
+<!--sección interes camisetas-->
+<div class="container">
+    <h3 class="text-center">También te recomendamos</h3><br>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/chile/Camiseta_Local_Chile_2024_Rojo_IP8453_01_laydown.avif' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">SELECCIÓN CHILENA</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'selechile' %}" class="btn btn-primary">Ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/Europa/Alemania/BAYERLOCAL.jpg' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">BAYERN MUNICH</h4>
+                <h5 class="card-title fw-bold">Local 2023-2024</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'alemania' %}?imageUrl=/static/pagina/img/Europa/Alemania/BAYERLOCAL.jpg" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{% static 'pagina/img/ARGENTINA/ARGENTINA VISITA.webp' %}" class="card-img img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">SELECCIÓN ARGENTINA</h4>
+                <h5 class="card-title fw-bold">Local 2024-2025</h5>
+                <div class="rating">
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                  <i class="bi bi-star star"></i>
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="d-flex justify-content-around mb-4">
+                <a href="{% url 'argentina' %}?imageUrl=/static/pagina/img/ARGENTINA/ARGENTINA VISITA.webp" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div><br><br>
+</div><br><br>
+{% endblock %}

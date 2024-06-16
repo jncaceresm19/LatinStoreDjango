@@ -1,0 +1,51 @@
+{% extends 'pagina/base.html' %}
+{% load static %}
+{% block contenido %} 
+<html>
+<head>
+    <style>
+        #productos {
+            background-color: #f0f0f077; 
+        }
+    </style>
+</head>
+<body>
+    <br><div class="container">
+        <div class="row">
+            <center><h1>Listado de Productos</h1></center>
+        </div>
+        <br>
+        <div class="row mb-3">
+            <table class="table table-bordered" id="productos">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Fecha Recepción</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                {% for auxProd in productos %}
+                <tr>
+                    <td>{{ auxProd.id_producto }}</td>
+                    <td>{{ auxProd.nombre_producto }}</td>
+                    <td>{{ auxProd.stock }}</td>
+                    <td>{{ auxProd.precio }}</td>
+                    <td>{{ auxProd.fecha_recepcion }}</td>
+                    <td><a class="btn btn-primary" href="{% url 'productoEdit' pk=auxProd.id_producto %}">Editar</a></td> 
+                    <td><a class="btn btn-primary" href="{% url 'productoDel' pk=auxProd.id_producto %}">Eliminar</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <br>
+        <div class="row">
+            <a class="btn btn-primary" href="{% url 'productoAdd' %}">Agregar Producto</a>
+        </div>
+    </div><br><br>
+</body>
+</html>
+{% endblock %}
