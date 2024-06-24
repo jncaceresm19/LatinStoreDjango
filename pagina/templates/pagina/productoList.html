@@ -21,9 +21,12 @@
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Nombre</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Marca</th>
                         <th scope="col">Stock</th>
                         <th scope="col">Precio</th>
                         <th scope="col">Fecha Recepción</th>
+                        <th scope="col">Tallas Disponibles</th>
                         <th scope="col"></th>
                         <th scope="col"></th>
                     </tr>
@@ -32,9 +35,12 @@
                 <tr>
                     <td>{{ auxProd.id_producto }}</td>
                     <td>{{ auxProd.nombre_producto }}</td>
+                    <td>{{ auxProd.descripcion }}</td>
+                    <td>{{ auxProd.marca }}</td>
                     <td>{{ auxProd.stock }}</td>
                     <td>{{ auxProd.precio }}</td>
                     <td>{{ auxProd.fecha_recepcion }}</td>
+                    <td>{{ auxProd.tallas_disponibles }}</td>
                     <td><a class="btn btn-primary" href="{% url 'productoEdit' pk=auxProd.id_producto %}">Editar</a></td> 
                     <td><a class="btn btn-primary" href="{% url 'productoDel' pk=auxProd.id_producto %}">Eliminar</a></td>
                 </tr>
