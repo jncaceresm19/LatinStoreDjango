@@ -7,33 +7,33 @@
   
       let localBtn = document.getElementById("local2");
       let visitaBtn = document.getElementById("visita2");
-      let alternativaBtn = document.getElementById("alternativa");
+      let alternativaBtn = document.getElementById("alternativa2");
   
       let imgLocal = "{% static 'pagina/img/europa/alemania/BAYERLOCAL.jpg' %}";
       let imgVisita = "{% static 'pagina/img/europa/alemania/LEVERKUSENLOCAL.jpg' %}";
       let imgAlternativa = "";
   
       function changeImage(color) {
-          if (color === 'local') {
+          if (color === 'local2') {
               imgchange4.src = imgLocal;
-          } else if (color === 'visita') {
+          } else if (color === 'visita2') {
               imgchange4.src = imgVisita;
-          } else if (color === 'alternativa') {
+          } else if (color === 'alternativa2') {
               imgchange4.src = imgAlternativa;
           }
       }
   
       localBtn.addEventListener("click", function() {
-          changeImage('local');
+          changeImage('local2');
       });
       visitaBtn.addEventListener("click", function() {
-          changeImage('visita');
+          changeImage('visita2');
       });
       alternativaBtn.addEventListener("click", function() {
-          changeImage('alternativa');
+          changeImage('alternativa2');
       });
       
-      changeImage('local');
+      changeImage('local2');
   });
 </script>
 <script>
