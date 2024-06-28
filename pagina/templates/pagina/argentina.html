@@ -40,12 +40,10 @@
 
 <script>
   window.onload = function() {
-    // Obtener la URL de la imagen de la tarjeta desde la URL actual
     var urlParams = new URLSearchParams(window.location.search);
     var imageUrl = urlParams.get('imageUrl');
 
     if (imageUrl) {
-      // Cambiar la imagen en el contenedor-img con la URL de la imagen de la tarjeta
       document.getElementById('imgChange9').src = imageUrl;
     }
   };

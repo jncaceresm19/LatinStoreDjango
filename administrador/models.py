@@ -7,7 +7,7 @@ class Marca(models.Model):
         return self.nombre
 
 class Producto(models.Model):
-    id_producto = models.CharField(max_length=5, primary_key=True)
+    id_producto = models.AutoField(primary_key=True)
     nombre_producto = models.CharField(max_length=100)
     descripcion = models.TextField(blank=True, null=True)  
     stock = models.IntegerField(default=0)

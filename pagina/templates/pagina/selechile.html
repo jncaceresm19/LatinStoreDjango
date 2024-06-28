@@ -39,24 +39,14 @@
 </script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    console.log("DOM content loaded");
-    
+  window.onload = function() {
     var urlParams = new URLSearchParams(window.location.search);
     var imageUrl = urlParams.get('imageUrl');
 
-    console.log("imageUrl:", imageUrl);
-
     if (imageUrl) {
-      let imgElement = document.getElementById('imgChange3');
-      if (imgElement) {
-        imgElement.src = imageUrl;
-        console.log("Image source set to:", imageUrl);
-      } else {
-        console.log("Element with id 'imgChange3' not found.");
-      }
+      document.getElementById('imgChange3').src = imageUrl;
     }
-  });
+  };
 </script>
 {% endblock %}
 
