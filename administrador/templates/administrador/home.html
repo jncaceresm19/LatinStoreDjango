@@ -1,13 +1,47 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Iniciar Sesión</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Imagen de fondo-->
+    <style>
+        body{
+          background-image: url("{% static 'pagina/img/fondopagina.avif' %}");
+          height: 100vh;
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        }
+      </style>
+
 </head>
 <body>
-    <h1>Página de Inicio</h1>
-    <br><br>
-    <a href="{% url 'login' %}">Iniciar Sesión</a>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <center><h1><a><span class="text-warning">LATINS</span>TOREFUT</a></h1></center>
+                        <center><h3>Administrador</h3></center>
+                    </div>
+                    <div class="card-body text-center">
+                        <figure>
+                            <img src="{% static 'pagina/img/balonllamas.png' %}" alt="logopagina">         
+                        </figure>
+                        <a href="{% url 'login' %}" class="btn btn-dark">Iniciar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
