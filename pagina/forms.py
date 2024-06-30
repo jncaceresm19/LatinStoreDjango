@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 from django import  forms
 from django.forms import ModelForm
 from .models import Producto, Marca
@@ -22,4 +20,3 @@ class ProductoForm(forms.ModelForm):
         }
 
 
->>>>>>> da4c064962d8a85d73cf128fd4e29a2e01c65867

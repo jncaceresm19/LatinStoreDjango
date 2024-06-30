@@ -1,47 +1,54 @@
-from django.shortcuts import render, redirect, get_object_or_404
-
+from django.shortcuts import render
+from .models import Producto
+from .forms import ProductoForm
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+@login_required
+def menu(request):
+    request.session["usuario"] = "administrador"
+    usuario = request.session["usuario"]
+    context = {'usuario' : usuario}
+    return render(request,'administrador/menu.html', context)
 
-def index(request):
-    return render(request, 'pagina/index.html')
+def home(request):
+    context={}
+    return render(request,'administrador/home.html', context)
 
-def alemania(request):
-    return render(request, 'pagina/alemania.html')
+@login_required
+def reporte_productos(request):
+    productos = Producto.objects.all() 
+    context = {'productos' : productos}
+    return render(request,'administrador/menu.html', context)
 
-def brasil(request):
-    return render(request, 'pagina/brasil.html')
+def productoList(request):
+    productos = Producto.objects.all()  
+    contex = {'productos' : productos}
+    return render(request, 'administrador/productoList.html', contex)
 
-def argentina(request):
-    return render(request, 'pagina/argentina.html')
+def productoAdd(request):
+    if request.method == 'POST':
+        form = ProductoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            mensaje = "Producto agregado correctamente."
+            return render(request, 'administrador/productoAdd.html', {'form': ProductoForm(), 'mensaje': mensaje})
+    else:
+        form = ProductoForm()
+    
+    return render(request, 'administrador/productoAdd.html', {'form': form})
 
-def colocolo(request):
-    return render(request, 'pagina/colocolo.html')
+def productoEdit(request,pk):
+    producto = Producto.objects.get(id_producto=pk)
+    context = {'form' : ProductoForm(instance=producto)}
+    if request.method == 'POST':
+        formulario = ProductoForm(data=request.POST, files=request.FILES, instance=producto)
+        if formulario.is_valid:
+            formulario.save()
+            context = {'mensaje' : 'Actualización Correcta!!'}
+    return render(request,'administrador/productoEdit.html', context)
 
-def cololocal(request):
-    return render(request, 'pagina/cololocal.html')
-
-def comprar(request):
-    return render(request, 'pagina/comprar.html')
-
-def madrid(request):
-    return render(request, 'pagina/madrid.html')
-
-def manchester(request):
-    return render(request, 'pagina/manchester.html')
-
-def psg(request):
-    return render(request, 'pagina/psg.html')
-
-def restodelmundo(request):
-    return render(request, 'pagina/restodelmundo.html')
-
-def selechile(request):
-    return render(request, 'pagina/selechile.html')
-
-def uchile(request):
-    return render(request, 'pagina/uchile.html')
-
-def udechilelocal(request):
-    return render(request, 'pagina/udechilelocal.html')
-
+def productoDel(request,pk):
+    producto = Producto.objects.get(id_producto = pk) 
+    producto.delete()
+    return redirect(to='productoList')
